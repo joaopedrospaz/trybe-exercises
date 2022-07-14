@@ -6,6 +6,6 @@ Este repositório contém todas as atividades desenvolvidas por _[mim](https://g
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 #### Bloco 1: _[Unix, Bash e Shell Script]()_
 - [x] 1.3 - Fundamentos do Desenvolvimento Web
-- [ ] 1.3 - Introdução - Unix & Shell
-- [ ] 1.3 - Unix & Bash - Parte 1
-- [ ] 1.4 - Unix & Bash - Parte 2
+- [x] 1.3 - Introdução - Unix & Shell
+- [x] 1.3 - Unix & Bash - Parte 1
+- [x] 1.4 - Unix & Bash - Parte 2
