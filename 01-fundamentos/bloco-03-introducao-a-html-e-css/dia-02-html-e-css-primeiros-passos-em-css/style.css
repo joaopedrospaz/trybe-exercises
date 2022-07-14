@@ -1,0 +1,21 @@
+h1{ 
+    font-size: 65px;
+    color: orange;
+}
+
+#amarelo{
+background-color: yellow;
+}
+
+#vermelho{
+background-color: red; 
+}
+
+#marrom{
+background-color: brown;
+}
+
+
+.backcolor{
+background-color: skyblue;
+}
