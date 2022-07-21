@@ -1,6 +1,8 @@
-let nota = 86;
-
-if (nota >= 90) {
+let nota = -6;
+if (nota < 0 || nota > 100) {
+    console.log("ERRO, nota incorreta.");
+}
+else if (nota >= 90) {
     console.log('A');
 }
 else if (nota >= 80) {
