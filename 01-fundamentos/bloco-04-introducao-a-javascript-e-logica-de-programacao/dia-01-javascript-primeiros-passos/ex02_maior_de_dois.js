@@ -5,5 +5,5 @@ if (a > b) {
     console.log('O maior número é:', a, 'a');
 }
 else {
-    console.log('O maior número é:', b, 'b')
+    console.log('O maior número é:', b, 'b');
 }
