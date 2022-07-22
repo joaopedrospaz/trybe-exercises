@@ -45,10 +45,12 @@ else {
     console.log("Você foi reprovada(o)")
 }
 
-const conditionOne = true;
-const conditionTwo = false;
+const cenouras = true;
+const leite = true;
+const arroz = true;
+const feijao = true;
 
-console.log(conditionOne && conditionTwo);
+const listaDeCompras = cenouras && leite && arroz && feijao;
 
 
 
