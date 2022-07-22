@@ -20,7 +20,7 @@ for (i = 1; i < numbers2.length; i += 1) {
         if (numbers2[j] < numbers2[i]) {
             let position2 = numbers2[i];
             numbers2[i] = numbers2[j];
-            numbers2[j] = position2
+            numbers2[j] = position2;
         }
     }
 }
