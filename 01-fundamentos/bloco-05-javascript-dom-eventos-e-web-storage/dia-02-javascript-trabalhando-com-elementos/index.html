@@ -57,14 +57,20 @@
   </head>
   <body>
     <script>
-        const father = document.querySelector("body");
-        let title = document.createElement("h1");
-        title.innerText = "Exercício 5.2 - JavaScript DOM";
-        father.appendChild(title);
+        // 1
+        const elementBody = document.querySelector("body");
+        const elementH1 = document.createElement("h1");
+        elementH1.innerText = "Exercício 5.2 - JavaScript DOM";
+        elementBody.appendChild(elementH1);
+        // 2
+        const elementMain = document.createElement('main');
+        elementMain.className = 'main-content';
+        elementBody.appendChild(elementMain);
+        // 3
+        const  elementSectionCenter = document.createElement('section');
+        elementSectionCenter.className = 'center-content';
+        elementMain.appendChild(elementSectionCenter);
 
-        let main = document.createElement('main');
-        main.className = 'main-content'
-        father.appendChild(main)
     </script>
   </body>
 </html>
