@@ -77,5 +77,20 @@ for (let line = 1; line <= meio; line += 1) {
     dir += 1;    
 }
 
+// parte 6 - verificar se número é primo 
+let number = 7;
+let primo = true;
+for (let index = 2; index < number; index += 1) {
+    if (number % index === 0) {
+        primo = false;
+    }
+}
+
+if (primo === true) {
+    console.log(number, 'é primo.');    
+}
+else {
+    console.log(number, 'não é primo.');
+}
 
 
