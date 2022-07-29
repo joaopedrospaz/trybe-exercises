@@ -88,6 +88,15 @@
         elemenImg.className = 'small-image';
         elementSectionLeft.appendChild(elemenImg);
         // 8
+        const elemenUl = document.createElement('ul');
+        elementSectionRight.appendChild(elemenUl);
+        const numbersInPortugues = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let index = 0; index < numbersInPortugues.length; index += 1) {
+            const elemenLi = document.createElement('li');
+            elemenLi.innerText = numbersInPortugues[index];
+            elemenUl.appendChild(elemenLi); 
+        }
+
     </script>
   </body>
 </html>
