@@ -24,10 +24,12 @@ function createDaysOfTheMonth() {
         const dayLi = document.createElement('li');
         dayLi.innerHTML = day;
         dayLi.classList.add('day');
-        if (day === 24 || day === 25 || day === 31) {
+        if (day === 24 || day === 31) {
             dayLi.classList.add('holiday');
-        } else if (day === 4 || day === 11 || day === 18 || day === 25){
+        } else if (day === 4 || day === 11 || day === 18 ){
             dayLi.classList.add('friday');
+        } else if (day === 25) {
+            dayLi.classList.add('holiday', 'friday');
         }
         DaysList.appendChild(dayLi);   
 
@@ -73,3 +75,24 @@ function createButtonFriday(fridayName) {
     buttonsContainer.appendChild(buttonFriday);
 }
 createButtonFriday("Sexta-feira");
+
+// exercicio 5
+
+function changeFridayText() {
+    const buttonFriday = document.querySelector('#btn-friday');
+    let dayFriday = document.querySelectorAll('.friday');
+    let currentText = ['4', '11', '18', '25'];
+    let newText = 'SEXTOU!!!';
+    
+    buttonFriday.addEventListener('click', function () {
+        for (let index = 0; index < dayFriday.length; index += 1) {
+            if (dayFriday[index].innerHTML !== newText) {
+                dayFriday[index].innerHTML = newText;
+            } else {
+                dayFriday[index].innerHTML = currentText[index];
+            }
+        }
+    });
+}
+changeFridayText();
+
