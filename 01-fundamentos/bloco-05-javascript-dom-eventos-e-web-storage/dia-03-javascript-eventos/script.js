@@ -63,3 +63,13 @@ function ChangeBackgroundHoliday() {
     });
 }
 ChangeBackgroundHoliday();
+
+// exercicio 4
+function createButtonFriday(fridayName) {
+    const buttonsContainer = document.querySelector('.buttons-container');
+    let buttonFriday = document.createElement('button');
+    buttonFriday.id = 'btn-friday';
+    buttonFriday.innerHTML = fridayName;
+    buttonsContainer.appendChild(buttonFriday);
+}
+createButtonFriday("Sexta-feira");
