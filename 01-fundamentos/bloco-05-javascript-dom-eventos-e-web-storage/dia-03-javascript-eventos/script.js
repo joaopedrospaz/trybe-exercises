@@ -46,8 +46,17 @@ function holidayButton(buttonHolidayName) {
 holidayButton('Feriados');
 
 // exercicio 3
-function chageHolidayBackground() {
-    
+function HolidayBackground() {
+    let backgroundButton = document.querySelector('#btn-holiday')
+    let changeHolidayColor = document.querySelectorAll('.holiday')
+    let backgroundColor = 'rgb(238,238,238)';
+    let newColor = 'yellow';
+
+    backgroundButton.addEventListener('click', function () {
+        for (let index = 0; index < changeHolidayColor.length; index++) {
+            
+        }
+    })
 }
 
 // exercicio 4
