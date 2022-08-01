@@ -14,7 +14,7 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
-//   exercício 1
+ //   exercício 1
 function createDaysOfTheMonth() {
     let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const DaysList = document.getElementById('days');
@@ -46,18 +46,20 @@ function holidayButton(buttonHolidayName) {
 holidayButton('Feriados');
 
 // exercicio 3
-function mudarFundo() {
-    let botao = document.getElementById('btn-holiday');
-    let dias = document.querySelectorAll('.holiday');
+function ChangeBackgroundHoliday() {
+    let buttonHoliday = document.querySelector('#btn-holiday');
+    let dayHoliday = document.querySelectorAll('.holiday');
+    let currentColor = 'rgb(238, 238, 238)';
+    let newColor = 'yellow';
 
-    botao.addEventListener('click', function () {
-        for (let index = 0; index < dias.length; index += 1) {
-            if (dias[index].style.backgroundColor === "rgb(238, 238, 238)") {
-              dias[index].style.backgroundColor = 'red'
-            } 
-            else { dias[index].style.backgroundColor = "rgb(238, 238, 238)"}
-        }  
+    buttonHoliday.addEventListener('click', function () {
+        for (let index = 0; index < dayHoliday.length; index += 1) {
+            if (dayHoliday[index].style.backgroundColor === newColor) {
+                dayHoliday[index].style.backgroundColor = currentColor;
+            } else {
+                dayHoliday[index].style.backgroundColor = newColor;
+            }
+        }
     });
 }
-mudarFundo()
-
+ChangeBackgroundHoliday();
