@@ -36,12 +36,22 @@ function createDaysOfTheMonth() {
 createDaysOfTheMonth();
 
 // exercicio 2
-function holidayButton(buttonName) {
+function holidayButton(buttonHolidayName) {
     const buttonContainer = document.getElementsByClassName('buttons-container')[0];
     const button = document.createElement('button');
     button.id = 'btn-holiday';
-    button.innerHTML = buttonName;
+    button.innerHTML = buttonHolidayName;
     buttonContainer.appendChild(button);
 }
 holidayButton('Feriados');
+
+// exercicio 3
+function chageHolidayBackground() {
+    
+}
+
+// exercicio 4
+function fridayButton(buttonFridayName) {
+    
+}
 
