@@ -46,21 +46,18 @@ function holidayButton(buttonHolidayName) {
 holidayButton('Feriados');
 
 // exercicio 3
-function HolidayBackground() {
-    let backgroundButton = document.querySelector('#btn-holiday')
-    let changeHolidayColor = document.querySelectorAll('.holiday')
-    let backgroundColor = 'rgb(238,238,238)';
-    let newColor = 'yellow';
+function mudarFundo() {
+    let botao = document.getElementById('btn-holiday');
+    let dias = document.querySelectorAll('.holiday');
 
-    backgroundButton.addEventListener('click', function () {
-        for (let index = 0; index < changeHolidayColor.length; index++) {
-            
-        }
-    })
+    botao.addEventListener('click', function () {
+        for (let index = 0; index < dias.length; index += 1) {
+            if (dias[index].style.backgroundColor === "rgb(238, 238, 238)") {
+              dias[index].style.backgroundColor = 'red'
+            } 
+            else { dias[index].style.backgroundColor = "rgb(238, 238, 238)"}
+        }  
+    });
 }
-
-// exercicio 4
-function fridayButton(buttonFridayName) {
-    
-}
+mudarFundo()
 
