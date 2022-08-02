@@ -96,3 +96,22 @@ function changeFridayText() {
 }
 changeFridayText();
 
+// exercicio 6
+function dayMouseOver() {
+    const dayToZoom = document.querySelector('#days');
+    
+    dayToZoom.addEventListener('mouseover', function (event) {
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600';
+    });
+}
+function dayMouseOut() {
+    const zoomOut = document.getElementById('days');
+
+    zoomOut.addEventListener('mouseout', function (event) {
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = '200';
+    });
+}
+dayMouseOver();
+dayMouseOut();
