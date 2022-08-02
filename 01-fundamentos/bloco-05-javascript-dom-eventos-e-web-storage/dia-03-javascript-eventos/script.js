@@ -123,7 +123,7 @@ function addTask(activity) {
     taskName.innerHTML = activity;
     divTask.appendChild(taskName);
 }
-addTask('Estudar');
+addTask('Projeto');
 
 // exercicio 8
 function taksWithColor(color) {
@@ -148,3 +148,20 @@ function taskSelect() {
     });
 }
 taskSelect()
+
+function changeDayColor() {
+    let coloringDay = document.getElementById('days');
+    let captureTask = document.querySelector('.task');
+    let colorTask = captureTask.style.backgroundColor;
+    let currentDayColor = document.querySelector('.day').style.color;
+    
+    coloringDay.addEventListener('click', function (event) {
+        if (event.target.style.color !== colorTask) {
+            event.target.style.color = colorTask;
+        }
+         else {
+            event.target.style.color = currentDayColor;
+        }
+    })
+}
+changeDayColor();
