@@ -115,3 +115,12 @@ function dayMouseOut() {
 }
 dayMouseOver();
 dayMouseOut();
+
+// exercicio 7
+function addTask(activity) {
+    const divTask = document.querySelector('.my-tasks');
+    let taskName = document.createElement('span');
+    taskName.innerHTML = activity;
+    divTask.appendChild(taskName);
+}
+addTask('Estudar');
