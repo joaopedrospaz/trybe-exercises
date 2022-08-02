@@ -124,3 +124,27 @@ function addTask(activity) {
     divTask.appendChild(taskName);
 }
 addTask('Estudar');
+
+// exercicio 8
+function taksWithColor(color) {
+    const divTask = document.querySelector('.my-tasks');
+    let taskColor = document.createElement('div');
+    taskColor.className = 'task';
+    taskColor.style.backgroundColor = color;
+    divTask.appendChild(taskColor);
+}
+taksWithColor('rgb(39, 208, 166)');
+
+// exercicio 9
+function taskSelect() {
+    let taskSelected = document.querySelector('.task');
+
+    taskSelected.addEventListener('click', function (event) {
+        if (event.target.className === 'task') {
+            event.target.className = 'task selected'
+        } else {
+            event.target.className = 'task'
+        }
+    });
+}
+taskSelect()
