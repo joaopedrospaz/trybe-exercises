@@ -37,7 +37,11 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 185px;
+  justify-content: space-around;
+  height: 190px;
+  width: 170px;
+
+
 }
 
 #allImg {
@@ -50,8 +54,8 @@ div {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  width: 470px;
-  height: 380px;
+  width: 535px;
+  height: 395px;
 }
 
 footer {
