@@ -9,4 +9,4 @@ Este repositório contém todas as atividades desenvolvidas por _[mim](https://g
 - [x] 1.3 - Introdução - Unix & Shell
 - [x] 1.3 - Unix & Bash - Parte 1
 - [x] 1.4 - Unix & Bash - Parte 2
--[] 2.5  
+- [ ] 1.5
