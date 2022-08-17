@@ -1,14 +1,17 @@
 function hydrate(drink) {
-    let amount = /\d+/g;
-    let cups = drink.match(amount);
+  const listSplit = drink.split('')  
     let total = 0;
-    for (const numbers of cups) {
-      total += Math.abs(numbers)
+    for (const numbers of listSplit) {
+      numbersInt = parseInt(numbers)
+      if (numbersInt) {
+        total += numbersInt
+      }
     }
+    let cup = 'copo';
     if (total > 1) {
-    return (total + ' copos de água')
-    } else {
-    return (total + ' copo de água')
-    }  
+      cup = 'copos'
+    }
+    return `${total} ${cup} de água`
   }
+  console.log(hydrate('1 copo'));
 module.exports = hydrate;
