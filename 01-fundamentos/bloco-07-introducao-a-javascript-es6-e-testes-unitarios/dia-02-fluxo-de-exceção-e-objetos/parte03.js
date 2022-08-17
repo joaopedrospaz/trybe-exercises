@@ -82,3 +82,36 @@ const verifyPair = (obj, key, val) => {
     return test;
 }
 console.log(verifyPair(lesson2,'professor','Carlos'));
+
+// Bônus 
+// 1
+const studentsInMath = (obj) => {
+    total = 0;
+    let array = Object.keys(obj);
+    for (let index in array) {
+        if (obj[array[index]].materia === 'Matemática') {
+            total += obj[array[index]].numeroEstudantes;
+        }
+    }
+    return total;
+}
+console.log(studentsInMath(allLessons));
+
+// 2
+const createReport = (obj, teacher) => {
+    const allLessons = [];
+    let allStudents = 0;
+    allObj ={}
+    let array = Object.values(obj);
+    for (let index in array) {
+        if (array[index].professor === teacher) {
+            allStudents += array[index].numeroEstudantes;
+            allLessons.push(array[index].materia)
+        }
+    }
+    allObj.professor = teacher
+    allObj.aulas = allLessons
+    allObj.estudantes = allStudents
+    return allObj
+}
+console.log(createReport(allLessons, 'Maria Clara'));
