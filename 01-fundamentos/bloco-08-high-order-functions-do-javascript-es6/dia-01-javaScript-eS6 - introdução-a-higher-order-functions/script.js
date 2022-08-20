@@ -1,3 +1,4 @@
+// parte 1
 const people = (name) => {
   email = name.toLowerCase().split(' ').join('_') + '@email.com';
   return {name, email}
@@ -13,3 +14,11 @@ const newEmployees = (func) => {
 };
 
 console.log(newEmployees(people));
+
+// parte 2
+const check = (number, numberDrawn) => {
+ return number === numberDrawn ? "Parabéns você ganhou" : "Tente novamente";
+};
+
+const result = () => Math.floor((Math.random() * 5) + 1);
+console.log(check(3, result()));
