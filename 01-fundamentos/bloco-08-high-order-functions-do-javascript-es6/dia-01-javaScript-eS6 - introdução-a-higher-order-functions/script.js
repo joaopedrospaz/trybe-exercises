@@ -22,3 +22,4 @@ const check = (number, numberDrawn) => {
 
 const result = () => Math.floor((Math.random() * 5) + 1);
 console.log(check(3, result()));
+// parte 3
