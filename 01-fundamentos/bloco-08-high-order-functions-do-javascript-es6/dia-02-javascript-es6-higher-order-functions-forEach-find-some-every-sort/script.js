@@ -91,3 +91,11 @@ function booksOrderedByReleaseYearDesc() {
   return books.sort((livroA, livroB) => livroB.releaseYear - livroA.releaseYear )
 }
 console.log(booksOrderedByReleaseYearDesc());
+
+// parte 5
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((book) => book.author.birthYear > 1901)
+}
+// console.log(everyoneWasBornOnSecXX());
