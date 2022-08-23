@@ -85,3 +85,9 @@ function getNamedBook() {
   return books.find((book) => book.name.length === 26)
 }
 // console.log(getNamedBook());
+
+// parte 4
+function booksOrderedByReleaseYearDesc() {
+  return books.sort((livroA, livroB) => livroB.releaseYear - livroA.releaseYear )
+}
+console.log(booksOrderedByReleaseYearDesc());
