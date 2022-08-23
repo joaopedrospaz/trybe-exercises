@@ -88,14 +88,20 @@ function getNamedBook() {
 
 // parte 4
 function booksOrderedByReleaseYearDesc() {
-  return books.sort((livroA, livroB) => livroB.releaseYear - livroA.releaseYear )
+  return books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear )
 }
-console.log(booksOrderedByReleaseYearDesc());
+// console.log(booksOrderedByReleaseYearDesc());
 
 // parte 5
 const expectedResult = false;
 
 function everyoneWasBornOnSecXX() {
-  return books.every((book) => book.author.birthYear > 1901)
+  return books.every((book) => book.author.birthYear >= 1901 && book.author.birthYear <= 2000);
 }
 // console.log(everyoneWasBornOnSecXX());
+
+// parte 6
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
+}
+// console.log(someBookWasReleaseOnThe80s());
