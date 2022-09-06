@@ -26,7 +26,9 @@ const jupiter = {
     measurementUnit: MEASUREMENT_UNIT,
   },
 };
-// ordem: A(mars), B(venus), C(jupiter).
+
+// Ordem: A(mars), C(jupiter), B(venus). 
+
 console.log(planetDistanceFromSun(mars)); // A
-console.log(planetDistanceFromSun(venus)); // B
-console.log(planetDistanceFromSun(jupiter)); // C
+setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B
+setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C
