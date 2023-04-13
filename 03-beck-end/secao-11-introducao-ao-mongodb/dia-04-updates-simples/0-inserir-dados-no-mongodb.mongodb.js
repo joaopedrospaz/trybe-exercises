@@ -17,4 +17,5 @@ db.movies.insertMany([
         "category": [ "family", "comedy" ],
         "imdbRating": 7.4
       }
-])
+]);
+
